@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Jellyfish Type</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JELLY FISH CLASSIFICATION</h1>
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+                <a href="{{ url_for('predict') }}">Get Started</a>
+            </nav>
+            
+        </div>
+    </header>
+    <section class="predict">
+        <h2>Upload an Image to Predict Jellyfish Type</h2>
+        <form action="/output" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Upload and Predict</button>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jellyfish World. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
