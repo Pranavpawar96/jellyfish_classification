@@ -1,0 +1,71 @@
+Jelly Fish Types Classification Using AI
+    Jellyfish Types Classification Using AI is an innovative project that utilizes artificial intelligence (AI) techniques to accurately identify and classify different types of jellyfish species. 
+    By analyzing images and data related to jellyfish morphology, coloration, and other distinguishing features, this project aims to create a robust classification system that can be used for 
+    scientific research, conservation efforts, and marine ecosystem management.
+
+Deep Learning Concepts
+    CNN: a convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery.
+    CNN Basic
+    VGG16: VGG16 is a deep convolutional neural network architecture for image classification, consisting of 16 layers with small convolution filters.
+    VGG16
+    Flask: Flask is a popular Python web framework, meaning  it is a third-party Python library used for developing web applications.
+    Flask Basics
+    If you are using Pycharm IDE, you can install the packages through the command prompt and follow the same syntax as above.
+
+Project Objectives
+    By the end of this project you will:
+    Know fundamental concepts and techniques of Convolutional Neural Network.
+    Gain a broad understanding of image data.
+    Know how to pre-process/clean the data using different data preprocessing techniques.
+    know how to build a web application using the Flask framework.
+
+Project Flow
+    The user interacts with the UI (User Interface) to choose the image.
+    The chosen image is analyzed by the model which is integrated with flask application.
+    CNN Models analyze the image, then prediction is showcased on the Flask UI. To accomplish this, we must complete all the activities and tasks listed below.
+   =Data Collection.
+      Create Train and Test Folders.
+      Data Preprocessing.
+      Import the ImageDataGenerator library
+      Configure ImageDataGenerator class
+      ApplyImageDataGenerator functionality to Train dataset and Test dataset
+    =Model Building
+      Import the model building Libraries.
+      Importing the VGG16.
+      Initializing the model
+      Adding Fully connected Layer
+      Configure the Learning Process
+      Training and Testing the model.
+      Save the Model
+    =Application Building
+      Create an HTML file
+      Build Python Code
+
+Project Structure
+      The Data folder contains the training and testing images for training our model.
+      We are building a Flask Application that needs HTML pages stored in the templates.
+      folder and a python script app.py for server-side scripting
+      we need the model which is saved and the saved model in this content is a cnn.h5
+      templates folder contains index.html, predict.html & output.html pages.
+                      --project structure-- 
+
+                      JELLYFISH_CLASSIFICATION/
+                      ├── static/
+                      │   ├── jellyfish.jpg
+                      │   ├── jellyfish1.jpg
+                      │   ├── jellyfish2.webp
+                      │   ├── style.css
+                      ├── templates/
+                      │   ├── portfolio-details.html
+                      │   ├── detail.html
+                      │   ├── predict.html
+                      │   ├── about.html
+                      │   ├── contact.html
+                      │   ├── index.html
+                      ├── uploads/
+                      ├── app.py
+                      ├── cnn.keras
+      
+      
+      
+
