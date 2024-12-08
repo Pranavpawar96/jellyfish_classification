@@ -47,7 +47,7 @@ Project Structure
       folder and a python script app.py for server-side scripting
       we need the model which is saved and the saved model in this content is a cnn.h5
       templates folder contains index.html, predict.html & output.html pages.
-                      --project structure-- 
+                     --project structure-- 
 
                       JELLYFISH_CLASSIFICATION/
                       ├── static/
