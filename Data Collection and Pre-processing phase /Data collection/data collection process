@@ -1,0 +1,49 @@
+Data Collection & Data Pre-processing
+It is most crucial aspect that makes algorithm training possible. So this section allows you to download the required dataset.
+
+
+  Download the dataset
+There are many popular open sources for collecting the data. Eg: kaggle.com, UCI repository, etc.
+
+In this project, we have used water_potability.csv data. This data is downloaded from kaggle.com. Please refer to the link given below to download the dataset.
+
+As the dataset is downloaded. Let us read and understand the data properly with the help of some visualization techniques and some analyzing techniques.
+Note: There are a number of techniques for understanding the data. But here we have used some of it. In an additional way, you can use multiple techniques. 
+
+
+Import the ImageDataGenerator library.
+Image data augmentation is a technique that can be used to artificially expand the size of a training dataset by creating modified versions of images in the dataset.
+The Keras deep learning neural network library provides the capability to fit models using image data augmentation via the ImageDataGenerator class.
+Let us import the ImageDataGenerator class from tensorflow Keras.
+       
+            #import image datagenerator Library
+            from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+Configure ImageDataGenerator class
+ImageDataGenerator class is instantiated and the configuration for the types of data augmentation.  There are five main types of data augmentation techniques for image data; specifically:
+Image shifts via the width_shift_range and height_shift_range arguments.
+The image flips via the horizontal_flip and vertical_flip arguments.
+Image rotations via the rotation_range argument
+Image brightness via the brightness_range argument.
+Image zoom via the zoom_range argument.
+An instance of the ImageDataGenerator class can be constructed for train and test.
+  
+            train_datagen = ImageDataGenerator(rescale=1./255, shear_range=0.2,zoom_range=0.2, horizontal_flip=True)
+
+
+Apply ImageDataGenerator functionality to Trainset and Testset
+Let us apply ImageDataGenerator functionality to Train set and Test set by using the following code. For Training set using flow_from_directory function.
+
+            train_data = train_datagen.flow_from_directory(
+            'D:/jelly dataset/archive/Train_Test_Valid/train',
+            target_size=(224,224),
+            batch_size=15,
+            class_mode='categorical')
+            
+            valid_data = train_datagen.flow_from_directory( 'D:/jelly dataset/archive/Train_Test_Valid/train',target_size=(224, 224),
+            batch_size=15,
+            class_mode='categorical')
+
+  
+  
+  
