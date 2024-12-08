@@ -1,0 +1,67 @@
+1. Hyperparameter Tuning
+    Learning Rate Adjustment: Experiment with different learning rates to find the one that achieves the best balance between convergence speed and model accuracy.
+    Batch Size Tuning: Test various batch sizes to optimize training speed and memory usage.
+    Optimizer Selection: Compare optimizers like Adam, SGD, RMSprop, etc., and document their impact on performance.
+    Epochs: Experiment with different numbers of epochs to determine the point of diminishing returns.
+Implementation:
+              Code or scripts where hyperparameters are adjusted systematically.
+              Logs or notebooks showing how hyperparameters impact training/validation accuracy.
+2. Model Architecture Optimization
+              Experiment with changes in the model architecture:
+              Add or remove layers.
+              Change activation functions (ReLU, sigmoid, etc.).
+              Use different pooling strategies (e.g., max pooling, average pooling).
+              Evaluate and compare lightweight models for faster inference.
+              Implementation:
+              Updated or alternate model scripts.
+              Performance comparisons of various architectures.
+3. Regularization Techniques
+      Dropout Layers: Introduce dropout to prevent overfitting.
+      Weight Decay: Use L1/L2 regularization to constrain the model's complexity.
+Implementation:
+            Provide examples of regularization code.
+            Visualize the reduction in overfitting using loss curves for training and validation.
+4. Data Augmentation
+      Enhance the dataset by applying augmentation techniques:
+      Flipping, rotation, zooming, shearing, or adding noise to images.
+      Augmentation can improve the model's ability to generalize.
+      Fine-tune the model with the augmented dataset and evaluate its impact.
+Implementation:
+            Augmented dataset generation scripts.
+            Performance logs before and after data augmentation.
+5. Transfer Learning
+      Fine-tune a pre-trained model like ResNet, VGG, or Inception for jellyfish classification.
+      Document how transfer learning impacts accuracy and reduces training time.
+      Implementation:
+      Include the transfer learning script (e.g., using keras.applications or PyTorch models).
+      Record and compare metrics before and after fine-tuning.
+6. Performance Metrics Analysis
+      Evaluate and optimize the model using:
+      Accuracy: Overall classification accuracy.
+      Precision, Recall, F1-score: Particularly useful if the dataset is imbalanced.
+      Confusion Matrix: To analyze class-specific performance.
+      Use visualization tools like TensorBoard or Matplotlib for clarity.
+      Implementation:
+      Scripts for generating confusion matrices or precision-recall curves.
+      Metric comparisons during optimization.
+7. Quantization and Pruning
+      Optimize the model for deployment:
+      Quantization: Reduce the model size by converting weights to lower precision (e.g., from float32 to int8).
+      Pruning: Remove redundant connections or neurons to reduce computational cost.
+      Implementation:
+      Quantized/pruned model files.
+      Documented changes in model size and performance.
+8. Evaluation of Computational Resources
+      Test the optimized model on different hardware (e.g., GPUs, CPUs).
+      Measure inference time and memory usage to ensure deployment feasibility.
+      Implementation:
+      Logs of resource utilization before and after optimization.
+      Scripts for benchmarking inference speed.
+      Deliverables for the Folder
+      Scripts and notebooks for:
+      Hyperparameter tuning.
+      Architecture optimization.
+      Regularization and data augmentation.
+      Logs of experiments (e.g., CSV files, text logs).
+      Visualization plots (loss curves, accuracy trends, confusion matrices).
+      Optimized model weights and configurations.
