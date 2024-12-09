@@ -1,0 +1,22 @@
+﻿Assignment No - 3
+
+
+Analyze a given time series dataset to identify trends, seasonality, and autocorrelation.
+
+
+Data Preprocessing
+Load the dataset into a Pandas DataFrame.
+Visualize the data to identify trends, seasonality, and outliers.
+Check for missing values and outliers.
+Check for mean, standard deviation and variance test.
+Apply transformations , scaling, etc. if needed
+
+
+Model Selection
+Analyze the ACF and PACF plots to identify the appropriate AR and MA terms.
+Select an ARIMA model based on the ACF and PACF analysis.
+Fit the selected model to the data and evaluate its performance.
+
+
+Dataset is given in the folder. You are free to use another dataset.
+Dataset: https://www.nseindia.com/get-quotes/equity?symbol=TATAMOTORS

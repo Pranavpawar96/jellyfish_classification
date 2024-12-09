@@ -1,0 +1,4 @@
+Apply transfer learning techniques using pre-trained models like ResNet-50 and VGG16 for image classification.
+Use a custom image dataset
+Train the model using transfer learning, fine-tuning only the dense layers.
+Evaluate the model using metrics like accuracy, precision, and recall.
