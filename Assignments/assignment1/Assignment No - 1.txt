@@ -1,3 +1,0 @@
-Implement a basic ANN from scratch using TensorFlow. Train the network on the MNIST dataset (or CIFAR-10 for a more advanced approach) and evaluate the model's performance.
-Construct a Convolutional Neural Network to classify images from the CIFAR-10 dataset. Include convolutional layers, pooling, and fully connected layers.
-Compare results between the ANN and CNN models and provide visualizations (e.g., accuracy and loss curves).
