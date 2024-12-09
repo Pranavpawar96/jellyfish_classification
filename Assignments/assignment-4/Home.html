@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <a href="/create">Add New Task</a>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task[1] }} - {% if task[2] == 0 %}Incomplete{% else %}Complete{% endif %}
+            <a href="/update/{{ task[0] }}">Edit</a>
+            <a href="/delete/{{ task[0] }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
